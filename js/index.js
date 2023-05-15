@@ -5,6 +5,7 @@ $(function(){
   asidePageMovement();
   range();
   detail();
+  navMobile();
 })
 
 const navPageMovement = () => {
@@ -13,8 +14,9 @@ const navPageMovement = () => {
     const thisHeight = $(href).offset().top;
     $('html,body').animate({
       scrollTop : thisHeight
-    },300);
-  })
+    },100,);
+  });
+
 }
 
 const asidePageMovement = () => {
@@ -48,5 +50,19 @@ const detail = () => {
     }else if($(this).parent().next('div').css('display') == 'block'){
       $(this).parent().next('div').slideUp();
     }
+  })
+}
+
+const navMobile = () => {
+  $('ul.menuMobile').css('top','-100vh');
+  $('#header>p').on('click',function(){
+    if( $('ul.menuMobile').css('top') === '-732px'){      
+      $('ul.menuMobile').animate({'top':'80px'});   
+    }else{
+      $('ul.menuMobile').animate({'top':'-100vh'});
+    }
+  });
+  $('ul.menuMobile li>a').on('click',function(){
+    $('ul.menuMobile').animate({'top':'-100vh'});
   })
 }

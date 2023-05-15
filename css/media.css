@@ -1,0 +1,221 @@
+@charset "utf-8";
+
+/* web */
+
+/* 1200px */
+@media screen and (min-width:1200px){
+  /* header */
+  #header{
+    width : 1200px;
+  }
+
+  /* About Me */
+  div#main{
+    width : 1200px;
+  }
+
+}
+
+/* tablet */
+
+@media screen and (max-width:980px) and (min-width:800px){
+  
+  article#about>section>h4{
+    margin-bottom : 50px;
+  }
+
+  article#about>section>figure{
+    display: block;
+    text-align: center;
+    width : 700px;
+    margin : 0 auto;
+    /* background-color: green; */
+  }
+
+  article#about>section>figure>img{
+    margin-bottom : 50px;
+    width : 50%;
+  }
+
+  article#about>section>figure>figcaption{
+    margin : 0 auto;
+    width : 700px;
+  }
+
+  article#about>section>figure>figcaption>dl>dd:nth-child(4){
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-evenly;
+    width : 250px;
+    margin : 0 auto;
+    /* background-color: pink; */
+  }
+
+  article#about>section>figure>figcaption>dl>dd:nth-child(4)>img{
+    margin-bottom : 20px;
+  }
+
+  article#about>section>figure>figcaption>dl>dd:not(:last-child){
+    font-size : 25px;
+    line-height: 35px;
+    margin-bottom : 20px;
+  }
+
+
+  article#project>ul>li{
+    font : 18px / 22px  'Dongle', sans-serif;
+  }
+
+}
+
+@media screen and (max-width:800px) and (min-width:580px){
+
+  article#about>section>h4{
+    margin-bottom : 50px;
+  }
+
+  article#about>section>figure{
+    display: block;
+    text-align: center;
+    width : 100%;
+    margin : 0 auto;
+    /* background-color: green; */
+  }
+
+  article#about>section>figure>img{
+    margin-bottom : 50px;
+    width : 50%;
+  }
+
+  article#about>section>figure>figcaption{
+    margin : 0 auto;
+    width : 100%;
+  }
+
+  article#about>section>figure>figcaption>dl>dd:nth-child(4){
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-evenly;
+    width : 250px;
+    margin : 0 auto;
+    /* background-color: pink; */
+  }
+
+  article#about>section>figure>figcaption>dl>dd:nth-child(4)>img{
+    margin-bottom : 20px;
+  }
+
+  article#about>section>figure>figcaption>dl>dd:not(:last-child){
+    font-size : 25px;
+    line-height: 35px;
+    margin-bottom : 20px;
+  }
+
+
+  article#project>ul>li{
+    font : 18px / 22px  'Dongle', sans-serif;
+  }
+  
+
+}
+
+/* mobile */
+
+@media screen and (max-width:580px){
+  header{
+    margin-bottom : 30px;
+    position: fixed;
+    width:100%;
+  }
+
+  #header{
+    display: block;
+    text-align: center;
+  }
+
+  #header>p{
+    display: block;
+  }
+
+  #header>nav>ul.menu{
+    display: none;
+  }
+
+  div#main{
+    padding-top : 80px;
+  }
+  article#about>section>figure{
+    display: block;
+    text-align: center;
+    width : 100%;
+    margin : 0 auto;
+  }
+
+  article#about>section>figure>img{
+    margin-bottom : 50px;
+    width : 50%;
+  }
+
+  article#about>section>figure>figcaption{
+    margin : 0 auto;
+    width : 100%;
+  }
+
+  article#about>section>figure>figcaption>dl>dd:nth-child(4){
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-evenly;
+    width : 250px;
+    margin : 0 auto;
+    /* background-color: pink; */
+  }
+
+  article#about>section>figure>figcaption>dl>dd:nth-child(4)>img{
+    margin-bottom : 20px;
+  }
+
+  article#about>section>figure>figcaption>dl>dd:not(:last-child){
+    font-size : 25px;
+    line-height: 35px;
+    margin-bottom : 20px;
+  }
+
+
+  article#project>ul>li{
+    font : 18px / 22px  'Dongle', sans-serif;
+  }
+
+  article#project>ul>li.stack{
+    display: none;
+  }
+
+
+#project div>figure{
+  padding-bottom : 0;
+}
+#project div>h4{
+  font-size : 25px;
+}
+#project div>figure dt{
+  font-size : 20px;
+}
+
+#project div>figure dd{
+  font-size : 13px;
+}
+
+#project div>figure dd:nth-child(4)>img{
+  width : 10%;
+}
+
+  aside{
+    display: none;
+  }
+  
+  article{
+    padding-bottom : 0;
+  }
+}

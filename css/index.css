@@ -11,7 +11,6 @@ a{
 }
 
 article{
-  /* background-color: rgb(250, 245, 245); */
   padding : 70px 0;
   margin-bottom : 50px;
 }
@@ -31,13 +30,15 @@ header{
 }
 
 #header{
-  width : 1200px;
+  /* width : 1200px; */
+  width : 100%;
   margin: 0 auto;
   padding : 5px 20px;
   box-sizing: border-box;
   display: flex;
   align-items: center;
   justify-content: space-between;
+  position:relative;
 }
 
 
@@ -46,49 +47,93 @@ header{
   font : bold 30px / 0 'Josefin Sans', sans-serif;
 }
 
+#header>p{
+  background-color: #F1C38E;
+  width : 20px;
+  height : 20px;
+  position: absolute;
+  top : 0;
+  right : 20px;
+  display: none;
+  cursor: pointer;
+}
 
-#header>nav>ul{
+#header>p>span{
+  width : 20px;
+  height : 5px;
+  display: block;
+  background-color: rgb(123, 98, 22);
+  margin-bottom : 3px;
+}
+
+#header>nav>ul.menu{
   display: flex;
   align-items: center;
   width : 300px;
   justify-content: space-between;
 }
 
-#header>nav>ul>li{
+#header>nav>ul.menu>li{
   margin : 0 5px;
 }
 
-#header>nav>ul>li:hover{
+#header>nav>ul.menu>li:hover{
   text-shadow: 3px 2px 2px #fc8404;
 }
 
-#header>nav>ul>li>a{
+#header>nav>ul.menu>li>a{
   text-transform: uppercase;
   color : #fff;
   font : bold 17px / 0 'Josefin Sans', sans-serif;
 }
+
+#header>nav>ul.menuMobile{
+  position: fixed;
+  left:0;
+  /* top : -100vh; */
+  top:80px;
+  background-color: rgba(58, 50, 6, 0.821);
+  width : 100vw;
+  /* height: calc(100vh - 53px); */
+  height : 100vh;
+  text-align: center;
+  padding-top : 23vh;
+}
+
+#header>nav>ul.menuMobile>li{
+  font-size: 35px;
+  margin-bottom : 80px;
+}
+
+#header>nav>ul.menuMobile>li>a{
+  color : #fff;
+}
+
 
 /* main */
 
  /* About Me */
 
 div#main{
-  width : 1200px;
+  /* width : 1200px; */
+  width : 100%;
   margin : 0 auto 50px;
   box-sizing: border-box;
 }
 
 article#about>section{
-  padding : 0 25px;
+  /* padding : 0 25px; */
+  padding : 0 2.083333333333333% ;
   box-sizing: border-box;
-  width : 1100px;
+  /* width : 1100px; */
+  width : 91.66666666666667%;
   margin: 0 auto;
 }
 
 article#about>section>h4{
   font : bold 20px / 0 'IBM Plex Sans KR', sans-serif;
   text-align: center;
-  margin-bottom : 70px;
+  margin-bottom : 60px;
 }
 
 article#about>section>figure{
@@ -99,11 +144,13 @@ article#about>section>figure{
 }
 
 article#about>section>figure>img{
-  width : 450px;
+  /* width : 450px; */
+  width : 40.90909090909091%;
 }
 
 article#about>section>figure>figcaption{
-  width: 600px;
+  /* width: 600px; */
+  width : 54.54545454545455%;
 }
 
 article#about>section>figure>figcaption>dl{
@@ -138,13 +185,20 @@ article#about>section>figure>figcaption>dl>dd>img{
   margin : 0 5px;
 }
 
+article#about>section>figure>figcaption>dl>dd:last-child{
+  width : 100%;
+  margin : 0 auto;
+}
+
 
 /* My Skills */
 
 article#skills>dl{
-  width : 800px;
+  /* width : 800px; */
+  width : 66.66666666666667%;
   margin : 0 auto;
-  padding : 40px 0 20px;
+  /* padding : 40px 0 20px; */
+  padding : 40px 0 2.5%;
   /* background-color: pink; */
   display: flex;
   flex-wrap: wrap;
@@ -153,13 +207,15 @@ article#skills>dl{
 }
 
 #skills>dl>dt{
-  width : 300px;
+  /* width : 300px; */
+  width : 37.5%;
   text-align: center;
   margin-bottom : 30px;
 }
 
 #skills>dl>dd{
-  width : 500px;
+  /* width : 500px; */
+  width : 62.5%;
   height : 25px;
   border : 1px solid #a4a2a2;
   margin-bottom : 30px;
@@ -175,7 +231,8 @@ article#skills>dl{
 /* My Project */
 
 article#project>ul{
-  width : 900px;
+  /* width : 900px; */
+  width : 75%;
   background-color: rgb(247, 233, 204);
   margin: 0 auto;
   display:flex;
@@ -189,7 +246,8 @@ article#project>ul{
 
 article#project>ul>li{
   color : #653600fc;
-  width : 100px;
+  /* width : 100px; */
+  width : 11.1111111111%;
   padding : 5px 0;
   font : 20px / 22px  'Dongle', sans-serif;
 }
@@ -199,7 +257,8 @@ article#project>ul>li.accordion{
 }
 
 #project div{
-  width : 900px;
+  /* width : 900px; */
+  width : 75%;
   box-sizing: border-box;
   margin: 0 auto;
   border : 1px solid #a4a2a2;
@@ -213,11 +272,13 @@ article#project>ul>li.accordion{
 }
 
 #project div>figure{
-  padding : 30px 20px;
+  /* padding : 30px 20px; */
+  padding : 30px 2.222222222222222%;
   text-align: center;  
 }
 
-#project div>figure>img{
+#project div>figure>a>img{
+  width : 44.4444444444444%;
   margin-bottom : 50px;
   border : 1px solid #a4a2a2;
 }
@@ -241,6 +302,7 @@ article#project>ul>li.accordion{
 #project div>figure dd{
   margin-bottom : 45px;
   line-height: 30px;
+  font-family: 'IBM Plex Sans KR', sans-serif;
 }
 
 #project div>figure dd>img{
@@ -249,7 +311,8 @@ article#project>ul>li.accordion{
 }
 
 #project div>figure dd.plan>img{
-  width : 500px;
+  /* width : 500px; */
+  width : 55.55555555555556%;
   margin-left : 20px;
 }
 
@@ -289,5 +352,5 @@ footer>small{
   font-size : 12px;
 }
 
-/* modal */
+
 
