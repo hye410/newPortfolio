@@ -146,7 +146,6 @@ article#about>section>figure{
 article#about>section>figure>img{
   /* width : 450px; */
   width : 40.90909090909091%;
-  border-radius: 50px 50px;
 }
 
 article#about>section>figure>figcaption{
@@ -235,32 +234,23 @@ article#skills>dl{
 article#project>ul{
   /* width : 900px; */
   width : 90%;
-  background-color: #727272;
+  background-color: rgb(87, 87, 86);
   margin: 0 auto;
   display:flex;
   flex-wrap : wrap;
   align-items : center;
   justify-content: space-evenly;
   text-align: center;
-  border-bottom : 2px solid #fff;
+  border-bottom : 1px solid #ffffff;
   padding : 15px 0;
 }
 
 article#project>ul>li{
   color : #fff;
   /* width : 100px; */
-  width : 14%;
+  width : 11.1111111111%;
   padding : 5px 0;
-  font : 22px / 24px  'Dongle', sans-serif;
-  margin : 0 0.5%;
-}
-
-article#project>ul>li:nth-child(2){
-  width : 39%;
-}
-
-article#project>ul>li>a{
-  color : #fff;
+  font : 20px / 22px  'Dongle', sans-serif;
 }
 
 article#project>ul>li.accordion{
@@ -290,17 +280,12 @@ article#project>ul>li.accordion{
 
 #project div>figure>a>img{
   width : 44.4444444444444%;
-  margin-bottom : 10px;
+  margin-bottom : 50px;
   border : 1px solid #a4a2a2;
 }
 
-#project div>figure>p{
-  margin-bottom : 50px;
-  font-size : 12px;
-}
-
 #project div>figure dt{
-  font : 24px /20px 'IBM Plex Sans KR', sans-serif;
+  font : 24px /20px 'Maven Pro', sans-serif;
   margin-bottom : 35px;
   display: flex;
   align-items: center;
@@ -321,10 +306,6 @@ article#project>ul>li.accordion{
   font-family: 'IBM Plex Sans KR', sans-serif;
 }
 
-#project div>figure dd>a{
-  color : #000;
-}
-
 #project div>figure dd>img{
   margin-right: 15px;
   width : 40px;
@@ -333,7 +314,6 @@ article#project>ul>li.accordion{
 #project div>figure dd>p{  
   text-align: center;
   padding : 30px 0;
-  font-weight: bold;
 }
 
 #project div>figure dd>p:last-child{

@@ -6,6 +6,7 @@ $(function(){
   range();
   detail();
   navMobile();
+  typing();
 })
 
 const navPageMovement = () => {
@@ -56,13 +57,28 @@ const detail = () => {
 const navMobile = () => {
   $('ul.menuMobile').css('top','-100vh');
   $('#header>p').on('click',function(){
-    if( $('ul.menuMobile').css('top') === '-732px'){      
-      $('ul.menuMobile').animate({'top':'80px'});   
+    if( $('ul.menuMobile').css('top') == '80px'){
+      $('ul.menuMobile').animate({'top':'-100vh'});       
     }else{
-      $('ul.menuMobile').animate({'top':'-100vh'});
+      $('ul.menuMobile').animate({'top':'80px'});  
     }
   });
   $('ul.menuMobile li>a').on('click',function(){
     $('ul.menuMobile').animate({'top':'-100vh'});
   })
+}
+
+const typing = () => {
+  const content = '꺾이지 않는 프론트엔드 개발자';
+  const h4 = document.querySelector('#about>section>h4');
+  let i = 0;
+
+  function textTyping(){
+    if(i < content.length){
+      let txt = content.charAt(i);
+      h4.innerHTML += txt;
+      i++;
+    }
+  }
+  setInterval(textTyping, 120);
 }

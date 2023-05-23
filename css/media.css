@@ -143,6 +143,10 @@
     display: none;
   }
 
+  #header>nav>ul.menuMobile{
+    display: block;
+  }
+
   div#main{
     padding-top : 80px;
   }
@@ -205,6 +209,10 @@
 
 #project div>figure dd{
   font-size : 13px;
+}
+
+#project div>figure dd>p>img{
+  width : 95%;
 }
 
 #project div>figure dd:nth-child(4)>img{
