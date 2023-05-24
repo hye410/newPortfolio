@@ -4,9 +4,11 @@ $(function(){
   navPageMovement();
   asidePageMovement();
   range();
-  detail();
+  // detail();
   navMobile();
   typing();
+  changeBackground();
+  projectScroll();
 })
 
 const navPageMovement = () => {
@@ -17,7 +19,6 @@ const navPageMovement = () => {
       scrollTop : thisHeight
     },100,);
   });
-
 }
 
 const asidePageMovement = () => {
@@ -81,4 +82,29 @@ const typing = () => {
     }
   }
   setInterval(textTyping, 120);
+};
+
+const changeBackground = () => {
+  $('#project>section>div').on('mouseenter',function(e){
+    $(this).css('background-color','#323232e0');
+    $(this).css('color','#fff');
+    $(this).find('.detailInfo').css('color','#fff');
+
+  });
+  $('#project>section>div').on('mouseleave',function(e){
+    $(this).css('background-color','#fff');
+    $(this).css('color','#000');   
+    $(this).find('.detailInfo').css('color','#000');
+
+  })
 }
+
+  const projectScroll = () => {
+    $('#project>ul>li>a').on('click',function(e){
+      const href = $(this).attr('href');
+      const thisHeight = $(href).offset().top;
+      $('html,body').animate({
+        scrollTop : thisHeight
+      },100);
+    })
+  }

@@ -62,10 +62,13 @@
     margin-bottom : 20px;
   }
 
+  
+#project>section>div{
+  height : 1150px;
 
-  article#project>ul>li{
-    font : 18px / 22px  'Dongle', sans-serif;
-  }
+}
+
+
 
 }
 
@@ -113,9 +116,29 @@
     margin-bottom : 20px;
   }
 
+  #project>section{
+    padding : 30px 10px;
+    display: block;
+  }
 
-  article#project>ul>li{
-    font : 18px / 22px  'Dongle', sans-serif;
+  #project>section>div{
+    width : 80%;
+    height : 100%;
+    margin : 0 auto 35px;
+    padding : 40px 20px;
+  }
+
+  #project>section>div>h4{
+    margin-bottom : 40px;   
+  }
+
+  #project>section>div>figure>a{
+    display: block;
+    text-align: center;
+  }
+
+  #project>section>div>figure>a>img{
+    width : 60%;
   }
   
 
@@ -187,37 +210,32 @@
     margin-bottom : 20px;
   }
 
-
-  article#project>ul>li{
-    font : 18px / 22px  'Dongle', sans-serif;
+  #project>section{
+    padding : 30px 10px;
+    display: block;
   }
 
-  article#project>ul>li.stack{
-    display: none;
+  #project>section>div{
+    width : 80%;
+    height : 100%;
+    margin : 0 auto 35px;
+    padding : 40px 20px 20px 20px;
+  }
+
+  #project>section>div>h4{
+    margin-bottom : 40px;   
+  }
+
+  #project>section>div>figure>a{
+    display: block;
+    text-align: center;
+  }
+
+  #project>section>div>figure>a>img{
+    width : 70%;
   }
 
 
-#project div>figure{
-  padding-bottom : 0;
-}
-#project div>h4{
-  font-size : 25px;
-}
-#project div>figure dt{
-  font-size : 20px;
-}
-
-#project div>figure dd{
-  font-size : 13px;
-}
-
-#project div>figure dd>p>img{
-  width : 95%;
-}
-
-#project div>figure dd:nth-child(4)>img{
-  width : 10%;
-}
 
   aside{
     display: none;

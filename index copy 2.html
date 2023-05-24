@@ -1,0 +1,588 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65" crossorigin="anonymous">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/reset-css@5.0.1/reset.min.css">
+  <link rel="stylesheet" href="./css/index.css">
+  <link rel="stylesheet" href="./css/media.css">
+  <link href="https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@200&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Maven+Pro:wght@500&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans+KR:wght@300&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Dongle:wght@300&display=swap" rel="stylesheet">
+  <title>Dahye's Portfolio</title>  
+  <script src="./js/index.js"></script>
+</head>
+<body>
+  <!-- header -->
+  <header>
+    <div id="header">
+      <h1><a href="#">Dahye's Portfolio</a></h1>
+      <p>
+        <span></span>
+        <span></span>
+        <span></span>
+      </p>
+      <!-- nav -->
+
+      <nav>
+        <h2 class="hide">메인내비게이션</h2>
+        <ul class="menu">
+          <li><a href="#about">About</a></li>
+          <li><a href="#skills">Skill</a></li>
+          <li><a href="#project">Project</a></li>
+        </ul>
+
+        <ul class="menuMobile">
+          <li><a href="#about">About</a></li>
+          <li><a href="#skills">Skill</a></li>
+          <li><a href="#project">Project</a></li>
+        </ul>        
+      </nav>
+    </div>
+  </header>
+
+  <!-- main -->
+  <div id="main">
+
+    <!-- About Me -->
+
+    <article id="about">
+      <h3>About Me</h3>
+      <section>
+        <h4></h4>
+        <figure>
+          <img src="./images/mypic.jpg" alt="myPicture">
+          <figcaption>
+            <dl>
+              <dt><span></span>교육이수</dt>
+              <dd>메가스터디 IT아카데미 신촌캠퍼스</dd>
+              <dt><span></span>Stack</dt>
+              <dd>
+                <img src="./images/icon/html5.png" alt="html5">
+                <img src="./images/icon/css3.png" alt="css3">
+                <img src="./images/icon/javascript.png" alt="java script">
+                <img src="./images/icon/typescript.png" alt="type script">
+                <img src="./images/icon/jquery.png" alt="jquery">
+                <img src="./images/icon/react.png" alt="react">
+                <img src="./images/icon/redux.png" alt="redux">
+                <img src="./images/icon/scss.png" alt="scss">
+                <img src="./images/icon/nextjs.png" alt="nextJS">
+              </dd>
+              <dt><span></span>소개</dt>
+              <dd>
+                안녕하세요! 꺾이지 않는 신입 프론트엔드 개발자 이다혜입니다.<br>
+                몇 개의 프로젝트를 진행하면서 난관에 부딪힌 적도 많이 있었지만<br>
+                작년 가을 우리의 가슴을 뜨겁게 만들었던 마법의 단어, 이미 알고 계시죠?<br>
+                중요한 건 '꺾이지 않는 마음'이라는 것.<br>
+                그 마음가짐 하나로 끝까지 포기하지 않고 프로젝트를 완성해왔습니다.<br>
+                이런 경험을 토대로 포기하지만 않는다면 해내지 못 할 것이 없다는 것을 깨달았습니다.<br> 
+                저의 새로운 도전에 앞으로 어떤 어려움에 직면해도 이 마음가짐을 잊지 않고<br>
+                결국 또 해내고야 마는 개발자가 되겠습니다. 
+              </dd>
+            </dl>
+          </figcaption>
+        </figure>
+      </section>
+    </article>
+    <hr>
+    
+    <!-- My Skills -->
+
+    <article id="skills">
+      <h3>My Skills</h3>
+      <dl>
+        <dt>HTML5</dt>
+        <dd><span class="gauge" per="70"></span></dd>
+        <dt>CSS3</dt>
+        <dd><span class="gauge" per="65"></span></dd>
+        <dt>JavaScript</dt>
+        <dd><span class="gauge" per="60"></span></dd>
+        <dt>TypeScript</dt>
+        <dd><span class="gauge" per="15"></span></dd>
+        <dt>Jquery</dt>
+        <dd><span class="gauge" per="50"></span></dd>
+        <dt>ReactJS</dt>
+        <dd><span class="gauge" per="65"></span></dd>
+        <dt>Redux</dt>
+        <dd><span class="gauge" per="55"></span></dd>
+        <dt>SCSS</dt>
+        <dd><span class="gauge" per="65"></span></dd>
+        <dt>NextJS</dt>
+        <dd><span class="gauge" per="25"></span></dd>
+      </dl>
+    </article>
+    <hr>
+
+    <!-- My Project -->
+
+    <article id="project">
+      <h3>My Project</h3>
+      <!-- <ul>
+        <li>프로젝트명</li>
+        <li>프로젝트 설명</li>
+        <li>웹페이지</li>
+        <li>Github</li>
+        <li>디테일 보기</li>
+      </ul> -->
+      <!-- 1 -->
+      <!-- <ul class="work">
+        <li>
+          <a href="https://hye-scss-boot-project.s3.ap-northeast-2.amazonaws.com/index.html" target="_blank">
+            SCSS page
+          </a>          
+        </li>
+        <li>SCSS와 BootStrap을 사용하여 만든 페이지</li>
+        <li>
+          <a href="https://hye-scss-boot-project.s3.ap-northeast-2.amazonaws.com/index.html" target="_blank">
+            페이지 보러가기
+          </a>
+        </li>
+        <li>
+          <a href="https://github.com/hye410/boot-project.git" target="_blank">
+            코드 보러가기
+          </a>          
+        </li>
+        <li class="accordion">Click</li>
+      </ul> -->
+      <div>
+        <h4>SCSS & BootStrap Page</h4>
+        <figure>
+          <a href="https://hye-scss-boot-project.s3.ap-northeast-2.amazonaws.com/index.html" target="_blank">
+            <img src="./images/scss-main.jpg" alt="scss-main-page">            
+          </a>
+          <p>(이미지를 클릭하면 페이지로 이동합니다.)</p>       
+          <figcaption>
+            <dl>
+              <dt><span></span>프로젝트 설명</dt>
+              <dd>
+                SCSS와 BootStrap을 사용하여 만든 화장품 판매 페이지입니다.<br>
+                실제 numbuzin 홈페이지를 참고하여 간단하게 만든 페이지로 기능은 따로 없습니다.
+              </dd>
+              <dt><span></span>사용 스택</dt>
+              <dd>
+                <img src="/images/icon/html5.png" alt="html5">
+                <img src="/images/icon/css3.png" alt="css3">
+                <img src="/images/icon/scss.png" alt="scss">
+                <img src="/images/icon/bootstrap.png" alt="bootstrap">
+                <img src="/images/icon/javascript.png" alt="javascript">
+                <img src="/images/icon/jquery.png" alt="jquery">
+              </dd>
+              <dt><span></span>프로젝트 기간</dt>
+              <dd>
+                2023/01/02 ~ 2023/01/04
+              </dd>
+              <dt><span></span>개발참여도</dt>
+              <dd>
+                100%
+              </dd>
+            </dl>
+          </figcaption>
+        </figure>
+      </div>
+      <!-- 2 -->
+      <ul class="work">
+        <li>
+          <a href="http://redux-project.s3-website.ap-northeast-2.amazonaws.com/" target="_blank">
+            Redux Project
+          </a>
+        </li>
+        <!-- <li>Redux를 사용하여 만든 모바일 버전 페이지</li>
+        <li>
+          <a href="http://redux-project.s3-website.ap-northeast-2.amazonaws.com/" target="_blank">
+            페이지 보러가기
+          </a>
+        </li>
+        <li>
+          <a href="https://github.com/hye410/redux-project.git" target="_blank">
+            코드 보러가기
+          </a>
+        </li>
+        <li class="accordion">
+          Click
+        </li> -->
+      </ul>
+      <div>
+        <h4>Redux Project</h4>
+        <figure>
+          <a href="http://redux-project.s3-website.ap-northeast-2.amazonaws.com/" target="_blank">
+            <img src="./images/redux-main.jpg" alt="redux-main-page">
+          </a>
+          <p>(이미지를 클릭하면 페이지로 이동합니다.)</p>         
+          <figcaption>
+            <dl>
+              <dt><span></span>코드</dt>
+              <dd>
+                <a href="https://github.com/hye410/redux-project.git" target="_blank">
+                  Github(click)
+                </a>
+              </dd>
+              <dt><span></span>프로젝트 설명</dt>
+              <dd>
+                Redux를 사용하여 만든 모바일 버전 페이지로,<br>
+                Kurly 홈페이지를 참고하여 만들었습니다.<br>
+                찾고자 하는 과일을 검색 하여 찾을 수 있으며,
+                과일을 장바구니에 추가, 삭제 할 수 있습니다.<br>
+                또 장바구니에 담긴 상품의 수량을 다르게 함에 따라
+                상품의 금액이 자동으로 바뀌는 기능을 구현하였습니다.                
+              </dd>
+              <dt><span></span>사용 스택</dt>
+              <dd>
+                <img src="/images/icon/html5.png" alt="html5">
+                <img src="/images/icon/css3.png" alt="css3">
+                <img src="/images/icon/javascript.png" alt="javascript">
+                <img src="/images/icon/react.png" alt="react">
+                <img src="/images/icon/redux.png" alt="redux">
+              </dd>
+              <dt><span></span>프로젝트 기간</dt>
+              <dd>
+                2023/02/08 ~ 2023/02/19
+              </dd>
+              <dt><span></span>기능 설명</dt>
+              <dd>
+                <p>
+                  <img src="/images/redux-function1.png" alt="function1" />
+                  <span>
+                    ① search 기능을 넣어 원하는 과일을 찾을 수 있습니다.<br />
+                    ② 현재 화면에 표시되는 상품의 개수를 표시하였습니다.<br />
+                    ③ 원하는 대로 상품을 재정렬 할 수 있습니다.
+                  </span>
+                  <img src="/images/redux-function2.png" alt="function2" />
+                  <span>
+                    ① 장바구니에 담겨 있는 상품 개수를 표시합니다.<br />
+                    ② 카트 모양의 이모티콘을 클릭하여 장바구니에 상품을 담을 수 있습니다.<br />
+                  </span>
+                  <img src="/images/redux-function3.png" alt="function3" />
+                  <span>
+                    ① 상품마다 수량을 조절할 수 있습니다.<br />
+                    ② 휴지통 아이콘을 클릭하여 해당 상품을 장바구니에서 삭제할 수 있습니다.<br />
+                    ③ 총 상품 금액이 계산되어 표시됩니다.<br />
+                    ④ 상품금액이 5만원 미만일 경우, 배송비 3천원이 붙도록 설정하였습니다.<br />
+                    ⑤ 장바구니 비우기를 클릭하면 장바구니에 담긴 상품이 모두 삭제됩니다.
+                  </span>
+                </p>
+                <!-- <p>
+                  <a href="https://drive.google.com/file/d/1tIQqg1uia2jKuvV8fUXuGzBsxpXFmPdG/view?usp=share_link" target="_blank">
+                    <img src="./images/icon/pdf.png" alt="기능설명">
+                  </a>
+                </p> -->
+              </dd>
+              <dt><span></span>개발 참여도</dt>
+              <dd>100%</dd>
+            </dl>
+          </figcaption>
+        </figure>
+      </div>
+      <!-- 3 -->
+      <ul class="work">
+        <li>
+          <a href="https://next-project1-nine.vercel.app/" target="_blank">
+            NextJS blog
+          </a>
+        </li>
+        <!-- <li>
+          NextJS를 사용하여 만든 블로그 형식의 강아지 설명 사이트
+        </li>
+        <li>
+          <a href="https://next-project1-nine.vercel.app/" target="_blank">
+            페이지 보러가기
+          </a>
+        </li>
+        <li>
+          <a href="https://github.com/hye410/next-project.git" target="_blank">
+            코드 보러가기
+          </a>
+        </li>
+        <li class="accordion">
+          Click
+        </li> -->
+      </ul>
+      <div>
+        <h4>NextJS Blog</h4>
+        <figure>
+          <a href="https://next-project1-nine.vercel.app/" target="_blank">
+            <img src="./images/next-main.jpg" alt="next-main-page">
+          </a>
+          <p>(이미지를 클릭하면 페이지로 이동합니다.)</p>
+          <figcaption>
+            <dl>
+              <dt><span></span>코드</dt>
+              <dd>
+                <a href="https://github.com/hye410/next-project.git" target="_blank">
+                  Github(Click)
+                </a>
+              </dd>
+              <dt><span></span>프로젝트 설명</dt>
+              <dd>
+                NextJS를 사용하여 만들었으며 강아지를 소개하는 블로그 형식의 페이지입니다.<br>
+              </dd>
+              <dt><span></span>사용스택</dt>
+              <dd>
+                <img src="/images/icon/html5.png" alt="html5">
+                <img src="/images/icon/css3.png" alt="css3">
+                <img src="/images/icon/javascript.png" alt="javascript">
+                <img src="/images/icon/nextjs.png" alt="nextJS">
+              </dd>
+              <dt><span></span>프로젝트 기간</dt>
+              <dd>
+                2023/03/17 ~ 2023/03/19
+              </dd>
+              <dt><span></span>기능 설명</dt>
+              <dd>
+                <p>
+                  <img src="/images/next-function1.png" alt="function1" />
+                  <span>
+                    ① 원하는 기준으로 리스트를 재정렬합니다.<br />
+                    ② 한 페이지당 보여지는 게시글의 개수를 표시합니다.<br />
+                    ③ pagination을 통해 page당 게시글의 개수를 나누었습니다.<br />
+                  </span>
+                  <img src="/images/next-function2.png" alt="function2" />
+                  <span>
+                    강아지에 대한 상세 페이지를 보여주며,<br />
+                    Home으로 돌아가기 버튼을 클릭하면 다시 리스트로 돌아갑니다.
+                  </span>
+                </p>
+              </dd>
+              <dt><span></span>개발 참여도</dt>
+              <dd>100%</dd>
+            </dl>
+          </figcaption>
+        </figure>
+      </div>
+      <!-- 4 -->
+      <ul class="work">
+        <li>
+          <a href="http://hye-react-mini-project.s3-website.ap-northeast-2.amazonaws.com" target="_blank">
+            React mini SPA
+          </a>
+        </li>
+        <!-- <li>
+          React를 사용하여 만든 가상의 병원 SPA
+        </li>
+        <li>
+          <a href="http://hye-react-mini-project.s3-website.ap-northeast-2.amazonaws.com" target="_blank">
+            페이지 보러가기
+          </a>
+        </li>
+        <li>
+          <a href="https://github.com/hye410/react-mini-spa-project.git" target="_blank">
+            코드 보러가기
+          </a>
+        </li>
+        <li class="accordion">
+          Click
+        </li> -->
+      </ul>
+      <div>
+        <h4>React Mini SPA</h4>
+        <figure>
+          <a href="http://hye-react-mini-project.s3-website.ap-northeast-2.amazonaws.com/" target="_blank">
+            <img src="./images/mini-main.png" alt="React-mini-SPA">
+          </a>
+          <p>(이미지를 클릭하면 해당 페이지로 이동합니다.)</p>
+          <figcaption>
+            <dl>
+              <dt><span></span>코드</dt>
+              <dd>
+                <a href="https://github.com/hye410/react-mini-spa-project.git" target="_blank">
+                  Github
+                </a>
+              </dd>
+              <dt><span></span>프로젝트 설명</dt>
+              <dd>
+                React를 사용하여 만든 가상의 병원 SPA입니다.<br>
+                사용자는 진료 예약, 취소, 확인을 할 수 있고
+                예약 내용도 찾아 볼 수 있습니다.
+              </dd>
+              <dt><span></span>사용 스택</dt>
+              <dd>
+                <img src="/images/icon/html5.png" alt="html5">
+                <img src="/images/icon/css3.png" alt="css3">
+                <img src="/images/icon/javascript.png" alt="javascript">
+                <img src="/images/icon/react.png" alt="react">
+              </dd>
+              <dt><span></span>프로젝트 기간</dt>
+              <dd>
+                2023/04/24 ~ 2023/05/04
+              </dd>
+              <dt><span></span>프로젝트 기획</dt>
+              <dd class="plan">
+                <img src="./images/mini-plan.png" alt="plan of miniSPA">
+              </dd>
+              <dt><span></span>기능 설명</dt>
+              <dd>
+                <p>
+                  <img src="/images/mini-function1.png" alt="function1" />
+                  <span>
+                    진료예약 페이지에서 병원 진료를 예약할 수 있습니다.
+                  </span>
+                  <img src="/images/mini-function2.png" alt="function2" /><br />
+                  <img src="/images/mini-function3.png" alt="function3" />
+                  <span>
+                    ① 생년월일은 최대 오늘로, 그 이후는 불가능하게 설정하였습니다.<br />
+                    ② 예약일은 평일만 가능하며 병원 오픈시간(09:30)~마감시간(18:30)사이로 예약 시간을 설정하였습니다.<br />
+                    ③ 예약은 최대 2달 후까지만 가능하도록 설정하였습니다.
+                  </span>
+                  <img src="/images/mini-function4.png" alt="function4" />
+                  <span>
+                    ① 검색 기능을 통해 예약 내역을 찾아볼 수 있습니다.<br />
+                    ② 예약확인 페이지에서 위에서 예약한 손흥민의 예약 내역을 확인할 수 있습니다.<br />
+                      개인정보 보호를 위해 이름과 연락처에 마스킹 처리를 하였습니다.
+                  </span>
+                  <img src="/images/mini-function5.png" alt="function5" />
+                  <span>
+                    예약 내역을 확인하기 위해서는 비밀번호를 입력해야 합니다.<br />
+                    비밀번호는 생일 4자리를 임의로 설정해두었습니다.
+                  </span>
+                  <img src="/images/mini-function6.png" alt="function6" />
+                  <span>
+                    비밀번호를 맞게 입력하면 예약 내용 상세 페이지로 이동합니다.<br />
+                    돌아가기 버튼을 클릭하면 예약 내역 리스트 페이지로 다시 이동하고 <br />
+                    취소하기 버튼을 누르면 해당 예약이 취소됩니다.
+                  </span>
+                  <img src="/images/mini-function7.png" alt="function7" />
+                  <span>
+                    가상 병원의 주소를 신촌 세브란스 병원으로 임의 설정하였고 <br />
+                    카카오 web API를 사용하여 지도를 표시하였습니다.
+                  </span>
+                </p>
+              </dd>
+              <dt><span></span>개발 참여도</dt>
+              <dd>100%</dd>
+            </dl>
+          </figcaption>
+        </figure>
+      </div>
+      <!-- 5 -->
+      <ul class="work">
+        <li>
+          <a href="http://hye-spa-project.s3-website.ap-northeast-2.amazonaws.com" target="_blank">
+            React SPA
+          </a>          
+        </li>
+        <!-- <li>
+          React로 만든 인터넷 쇼핑몰 SPA (현재 진행 중인 프로젝트)
+        </li>
+        <li>
+          <a href="http://hye-spa-project.s3-website.ap-northeast-2.amazonaws.com" target="_blank">
+            페이지 보러가기
+          </a>
+        </li>
+        <li>
+          <a href="https://github.com/hye410/spa-project.git" target="_blank">
+            코드 보러가기
+          </a>
+        </li>
+        <li class="accordion">
+          Click
+        </li> -->
+      </ul>
+      <div>
+        <h4>React SPA</h4>
+        <figure>
+          <a href="http://hye-spa-project.s3-website.ap-northeast-2.amazonaws.com/" target="_blank">
+            <img src="./images/spa-main.jpg" alt="React-SPA">
+          </a>
+          <p>
+            (이미지를 클릭하면 해당 페이지로 이동합니다.)
+          </p>
+          <figcaption>
+            <dl>
+              <dt><span></span>코드</dt>
+              <dd>
+                <a href="https://github.com/hye410/spa-project.git" target="_blank">
+                  Github(click)
+                </a>
+              </dd>
+              <dt><span></span>프로젝트 설명</dt>
+              <dd>
+                React를 사용하여 실제 Giordano 홈페이지를 참고하여 만든 온라인 쇼핑몰 입니다.<br>
+                아직 진행 중인 프로젝트로 미완성인 상태입니다.<br>
+                New Arrivals, LogIn, About 페이지만 완성되었고<br>
+                장바구니도 장바구니에 담긴 상품 개수를 표시하는 기능을 제외하곤
+                모두 완성하였습니다.<br>
+                자세한 내용은 하단의 기능 설명 참고 부탁드립니다.
+              </dd>
+              <dt><span></span>사용 스택</dt>
+              <dd>
+                <img src="/images/icon/html5.png" alt="html5">
+                <img src="/images/icon/css3.png" alt="css3">
+                <img src="/images/icon/javascript.png" alt="javascript">
+                <img src="/images/icon/react.png" alt="react">
+              </dd>
+              <dt><span></span>프로젝트 기간</dt>
+              <dd>
+                2023/02/19 ~
+              </dd>
+              <dt><span></span>기능 설명</dt>
+              <dd>
+                <p>
+                  <img src="/images/spa-function1.png" alt="function1">
+                  <span>
+                    ① 현재 페이지에 보여지는 상품의 개수를 표시합니다.<br>
+                    ② 원하는 조건에 맞춰 상품을 재정렬합니다.<br>
+                    ③ 상품 이미지나 이름을 클릭하면 해당 상품의 상세페이지로 이동합니다.
+                  </span>
+                  <img src="/images/spa-function2.png" alt="function2">
+                  <span>
+                    ① 상품의 색상과 사이즈를 선택하면 하단에 선택한 옵션이 표시됩니다(②).<br>
+                    ③ 상품의 수량을 각자 조절할 수 있습니다.<br>
+                    ④ 수량에 따라 상품의 금액이 다시 표시됩니다.<br>
+                    ⑤ x표시의 아이콘을 클릭하면 해당 상품이 선택된 옵션에서 삭제됩니다.<br>
+                    ⑥ 선택된 모든 상품의 합게 가격이 표시됩니다.<br>
+                  </span>
+                  <img src="/images/spa-function3.png" alt="function3">
+                  <span>
+                    ① 클릭하면 해당 내용으로 스크롤이 자동으로 내려갑니다.<br>
+                    ② 장바구니에 선택된 상품이 담깁니다.<br>
+                    ③ 로그인 페이지로 이동하게 설정하였습니다.<br>
+                  </span>
+                  <img src="/images/spa-function4.png" alt="function4">
+                  <span>
+                    ① 해당 상품의 리뷰의 개수를 표시합니다.<br>
+                    ② 해당 상품의 리뷰 평점을 표시합니다.<br>
+                    ③ 원하는 기준에 따라 리뷰를 재정렬합니다.
+                  </span>
+                  <img src="/images/spa-function5.png" alt="function5">
+                  <span>
+                    ① 장바구니에 담긴 상품들이 보여집니다.<br>
+                    ② 클릭하면 모든 상품의 checkbox가 checked됩니다.<br>
+                    ③ 각 각의 상품의 수량을 조절할 수 있고 그에 따라 상품 금액이 달라집니다.<br>
+                    또한, x표시의 아이콘을 클릭하면 해당 상품이 장바구니에서 삭제됩니다.<br>
+                    ④ checkbox가 check된 상품만 장바구니에서 삭제됩니다.<br>
+                    ⑤ 장바구니에 담긴 모든 상품이 삭제됩니다.<br>
+                    ⑥ 장바구니에 담긴 상품의 총 금액이 표시되고, 2만원 미만일 시 배송비 2,000원이 추가됩니다.<br>
+                  </span>
+                </p>
+              </dd>
+              <dt><span></span>개발참여도</dt>
+              <dd>100%</dd>
+            </dl>
+          </figcaption>
+        </figure>
+      </div>
+    </article>
+
+    <!-- aside -->
+
+    <aside>
+    <ul>
+      <li><a href="#">이동</a></li>
+      <li><a href="#about">이동</a></li>
+      <li><a href="#skills">이동</a></li>
+      <li><a href="#project">이동</a></li>
+    </ul>
+    </aside>
+  </div>
+
+  <!-- footer -->
+
+  <footer>
+    <small>
+      Copyright (c) 2023 Dahye's Portfolio by Lee all right reserved
+    </small>
+  </footer>
+</body>
+</html>

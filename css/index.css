@@ -232,129 +232,110 @@ article#skills>dl{
 
 /* My Project */
 
-article#project>ul{
-  /* width : 900px; */
-  width : 90%;
-  background-color: #727272;
-  margin: 0 auto;
-  display:flex;
+#project>ul{
+  justify-content: center;
+  display : flex;
+  align-items: center;
+  margin-bottom : 30px;
+}
+
+#project>ul>li{
+  padding : 0 20px;
+  border-left : 1px solid #3e3e3e;
+}
+
+#project>ul>li:first-child{
+  border : none;
+}
+
+#project>ul>li>a{
+  color : #000;
+}
+
+#project>section{
+  /* border : 1px solid #a4a2a2; */
+  padding : 30px 10px;
+  display: flex;
   flex-wrap : wrap;
-  align-items : center;
   justify-content: space-evenly;
-  text-align: center;
-  border-bottom : 2px solid #fff;
-  padding : 15px 0;
+  align-items: center;
 }
 
-article#project>ul>li{
-  color : #fff;
-  /* width : 100px; */
-  width : 14%;
-  padding : 5px 0;
-  font : 22px / 24px  'Dongle', sans-serif;
-  margin : 0 0.5%;
-}
-
-article#project>ul>li:nth-child(2){
-  width : 39%;
-}
-
-article#project>ul>li>a{
-  color : #fff;
-}
-
-article#project>ul>li.accordion{
-  cursor: pointer;
-}
-
-#project div{
-  /* width : 900px; */
-  width : 90%;
-  box-sizing: border-box;
-  margin: 0 auto;
+#project>section>div{
+  width : 32.333333%;
+  height : 1150px;
+  margin : 0 0.5% 30px;
   border : 1px solid #a4a2a2;
+  padding : 30px 10px;
+  /* background-color: #323232e0; */
 }
 
-#project div>h4{
+#project>section>div>h4{
   text-align: center;
-  font-size : 30px;
-  padding: 60px 0 30px;
-  font-family: 'Maven Pro', sans-serif;
+  font-size: 22px;
+  margin-bottom : 30px;   
 }
 
-#project div>figure{
-  /* padding : 30px 20px; */
-  padding : 30px 2.222222222222222%;
-  text-align: center;  
-}
 
-#project div>figure>a>img{
-  width : 44.4444444444444%;
+#project>section>div>figure>a>img{
+  width : 100%;
+  height: 100%;;
+  border : 1px solid #a4a2a2;
   margin-bottom : 10px;
-  border : 1px solid #a4a2a2;
 }
 
-#project div>figure>p{
-  margin-bottom : 50px;
-  font-size : 12px;
+#project>section>div>figure>p{
+  font-size: 12px;
+  text-align: center;
+  margin-bottom : 30px;
 }
 
-#project div>figure dt{
-  font : 24px /20px 'IBM Plex Sans KR', sans-serif;
+#project>section>div>figure dl{
+  width : 95%;
+  margin : 0 auto;
+}
+
+#project>section>div>figure dt{
+  font-family : 'IBM Plex Sans KR', sans-serif;
+  margin-bottom : 20px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+#project>section>div>figure dt>span{
+  width : 10px;
+  height : 10px;
+  background-color: rgb(221, 65, 22);
+  display: block;
+  margin : 0 5px;
+}
+
+#project>section>div>figure dd{
+  font : 14px/24px 'IBM Plex Sans KR', sans-serif;
+  text-align: center;
   margin-bottom : 35px;
+}
+
+#project>section>div>figure dd:nth-child(6){
   display: flex;
   align-items: center;
   justify-content : center;
 }
 
-#project div>figure dt>span{
-  width : 10px;
-  height : 10px;
-  display: block;
-  background-color : rgb(224, 80, 18);
-  margin-right : 10px;
+#project>section>div>figure dd:nth-child(6)>img{
+  width : 30px;
+  height : 30px;
+  margin : 0 5px;
 }
 
-#project div>figure dd{
-  margin-bottom : 45px;
-  line-height: 30px;
-  font-family: 'IBM Plex Sans KR', sans-serif;
+#project>section>div>figure dd>p{
+  padding-top : 10px;
 }
 
-#project div>figure dd>a{
+#project>section>div>figure dd a{
   color : #000;
-}
-
-#project div>figure dd>img{
-  margin-right: 15px;
-  width : 40px;
-}
-
-#project div>figure dd>p{  
-  text-align: center;
-  padding : 30px 0;
-  font-weight: bold;
-}
-
-#project div>figure dd>p:last-child{
-  padding : 10px 0;
-}
-
-#project div>figure dd>p>span{
-  display:block;
-  text-align: 24px;
-  padding : 30px 0;
-}
-
-#project div>figure dd>p>img{
-  width : 500px;
-  border : 1px solid #777474;
-}
-
-#project div>figure dd.plan>img{
-  /* width : 500px; */
-  width : 55.55555555555556%;
-  margin-left : 20px;
+  text-decoration: underline;
 }
 
 
